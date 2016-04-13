@@ -1,19 +1,23 @@
 package vista;
 
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JButton;
+import javax.swing.border.EmptyBorder;
 
-public class VT_Presentacion extends JPanel {
+public class VT_Presentacion extends JFrame {
 
-	/**
-	 * Create the panel.
-	 */
+	private JPanel contentPane;
+
 	public VT_Presentacion() {
-		this.setBounds(100, 100, 900, 700);
-		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
 		
-		JButton button = new JButton();
-		button.setBounds(0, 0, this.getWidth(), 50);
-		add(button);
 	}
 }
