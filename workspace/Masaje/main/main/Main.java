@@ -1,15 +1,12 @@
 package main;
 
-import javax.swing.JFrame;
-
-import vista.VT_Presentacion;
+import controlador.CTR_Presentacion;
 
 public class Main {
 
 	public static void main(String[] args) {
+		CTR_Presentacion CtrPresentacion = new CTR_Presentacion();
 		
-		VT_Presentacion Presentacion;
-		
-		Presentacion = new VT_Presentacion();
+		CtrPresentacion.InitControladot();
 	}
 }

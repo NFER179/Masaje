@@ -3,11 +3,14 @@ package vista;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-public class VT_Presentacion extends JFrame {
+import objetosDeVista.NFrameArranque;
+
+public class VT_Presentacion extends NFrameArranque {
 
 	private JPanel contentPane;
 
@@ -19,5 +22,8 @@ public class VT_Presentacion extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
+		JButton b = new JButton();
+		b.setBounds(10, 10, 10, 10);
+		this.contentPane.add(b);
 	}
 }
