@@ -1,0 +1,14 @@
+public class Inicio {
+ 
+    public static void main(String[] args) {
+        JFrame sinBarraTitulo = new JFrame();
+        sinBarraTitulo.setUndecorated(true);
+        sinBarraTitulo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
+        sinBarraTitulo.add(new JLabel("Frame sin Barra de Titulo"));
+        sinBarraTitulo.setSize(250, 250);
+ 
+        sinBarraTitulo.setLocationRelativeTo(null);
+        sinBarraTitulo.setVisible(true);
+    }
+}
