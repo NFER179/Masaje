@@ -10,7 +10,7 @@ public class THRD_Presentacion extends Thread{
 		this.contar = true;
 	}
 	
-	public void Run() {
+	public void run() {
 		while (contar) {
 			
 			try {
@@ -26,6 +26,14 @@ public class THRD_Presentacion extends Thread{
 				this.contar = false;
 			}
 		}
+	}
+	
+	public int Avance() {
+		return this.contador;
+	}
+	
+	public boolean Termino() {
+		return this.contar;
 	}
 	
 	public void Stop() {
