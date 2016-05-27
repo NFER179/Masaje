@@ -1,6 +1,7 @@
 package objetosDeVista;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -20,14 +21,14 @@ public class NFrameArranque extends JFrame {
 	
 	public NFrameArranque(String Fondo) {
 		this.imgFondo = new ImageIcon(Fondo);
-		
+
+		this.setUndecorated(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setBounds(100, 100, this.imgFondo.getIconWidth(), this.imgFondo.getIconHeight());
 		this.contentPane = new JPanel();
 		this.contentPane.setBorder(new EmptyBorder(0, 0, 0, 0));
-		this.contentPane.setLayout(new BorderLayout(0, 0));
+		this.contentPane.setLayout(null);
 		this.setContentPane(contentPane);
-		this.setUndecorated(true);
 		this.setLocationRelativeTo(null);
 		
 		this.barraAvance = new JProgressBar();
@@ -40,4 +41,16 @@ public class NFrameArranque extends JFrame {
 		this.contentPane.add(this.fondo);
 	}
 	
+	public void QuitarFondo() {
+		this.remove(this.fondo);
+	}
+
+	public void QuitarProgressBar() {
+		this.contentPane.remove(this.barraAvance);
+	}
+	
+	public void FondoAlFondo() {
+		this.contentPane.remove(this.fondo);
+		this.contentPane.add(this.fondo);
+	}
 }

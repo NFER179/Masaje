@@ -1,5 +1,5 @@
 package validacion;
 
-public class VLD_Presentacion {
+public class Vld_Presentacion {
 
 }

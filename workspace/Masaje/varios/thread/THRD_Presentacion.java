@@ -1,11 +1,11 @@
 package thread;
 
-public class THRD_Presentacion extends Thread{
+public class Thrd_Presentacion extends Thread{
 
 	private int contador;
 	private boolean contar;
 	
-	public THRD_Presentacion() {
+	public Thrd_Presentacion() {
 		this.contador = 0;
 		this.contar = true;
 	}

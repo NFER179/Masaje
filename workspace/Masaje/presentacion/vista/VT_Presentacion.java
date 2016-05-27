@@ -13,11 +13,11 @@ import javax.swing.border.EmptyBorder;
 
 import objetosDeVista.NFrameArranque;
 
-public class VT_Presentacion extends NFrameArranque {
+public class Vt_Presentacion extends NFrameArranque {
 
 	private JPanel contentPane;
 	
-	public VT_Presentacion() {
+	public Vt_Presentacion() {
 		super("varios/imagenes/Presentacion.PNG");
 //		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		setBounds(100, 100, 450, 300);
@@ -25,5 +25,6 @@ public class VT_Presentacion extends NFrameArranque {
 //		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 //		contentPane.setLayout(new BorderLayout(0, 0));
 //		setContentPane(contentPane);
+		
 	}
 }

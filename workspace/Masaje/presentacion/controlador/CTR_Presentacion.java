@@ -1,24 +1,29 @@
 package controlador;
 
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import thread.Thrd_Presentacion;
+import vista.Vt_Presentacion;
 
-import thread.THRD_Presentacion;
-import vista.VT_Presentacion;
+public class Ctr_Presentacion implements Controlador{
 
-public class CTR_Presentacion implements ActionListener{
-
-	VT_Presentacion VistaPresentacion;
-	THRD_Presentacion Thread;
+	Vt_Presentacion VtPresentacion;
+	Thrd_Presentacion Thread;
 	
-	public CTR_Presentacion(){
-		this.VistaPresentacion = new VT_Presentacion();
+	public Ctr_Presentacion(){
+		this.VtPresentacion = new Vt_Presentacion();
 	}
-	
-	public void InitControladot() {
-		this.VistaPresentacion.setVisible(true);
+
+	public void InitControlador() {
+		this.VtPresentacion.setVisible(true);
 	}
-	
+
+	public void TerminateControlador() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		
 	}
 }
